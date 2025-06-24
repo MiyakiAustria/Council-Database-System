@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="employees.css">
-  <link rel="stylesheet" href="constituents.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="constituents.css" />
+  <link rel="stylesheet" href="dashboard.css" />
   <title>Office of Public Servants Database System</title>
 </head>
 <body>
-  <div class="sidenav">
-    <a href="#home" class="logo"><img src="Logo.png"></a>
-    <a href="#home" class="icons" title="Dashboard"><img class="active" src="Dashboard Icon.png"></a>
-    <a href="#home" class="icons" title="User Register"><img src="Register Icon.png"></a>
-    <a href="#home" class="icons" title="Requests"><img src="Requests Icon.png"></a>
-    <a href="#home" class="icons" title="Inventory"><img src="Inventory Icon.png"></a>
-    <a href="#home" class="logout" title="Logout"><img src="Log Out Icon.png"></a>
-  </div>
-  <div class="topnav">
-    <div class="notif-icon">
-      <img src="Notif Icon.png" alt="Notifications">
-      </button>
-    </div>
-    <div class="user-icon">
-      <img src="User Icon.png" alt="User Icon">
-      <span>
-        <strong>John Doughnut</strong><br>
-        <small>Admin</small>
-      </span>
-    </div>
-  </div>
   <div class="container">
-    <h1>Registry of Employees</h1>
-
-    <!-- Name Fields -->
-    <div class="form-row">
-      <div class="form-group half">
-        <label>Given Name<span class="required">*</span></label>
-        <input type="text">
+    <!-- SIDEBAR -->
+    <div class="side-nav">
+      <div class="user-icon">
+        <img src="./images/user-icon.png" alt="User Icon" />
+        <span>John Marikit</span>
       </div>
-      <div class="form-group half">
-        <label>Last Name<span class="required">*</span></label>
-        <input type="text"> 
+      <div class="nav-links">
+        <a href="dashboard.html" class="icons active"><img src="./images/dash-icon.png" alt="">Dashboard</a>
+        <a href="#user-register" class="icons"><img src="./images/forms-icon.png" alt="">User Register</a>
+        <a href="#requests" class="icons"><img src="./images/request-icon.png" alt="">Request Form</a>
+        <a href="#inventory" class="icons"><img src="./images/inventory.png" alt="">Inventory</a>
       </div>
-    <div class="form-group half">
-        <label>Last Name<span class="required">*</span></label>
-        <input type="text">
-    </div>
-    <div class="form-group quarter">
-        <label>Suffix</label>
-        <select>
-          <option value="">Select</option>
-          <option value="Jr">Jr</option>
-          <option value="Sr">Sr</option>
-          <option value="III">III</option>
-        </select>
-      </div>
+      <a href="#logout" class="logout"><img src="./images/logout.png" alt="">Log out</a>
     </div>
 
-    <!-- Address -->
-    <div class="section-title">Complete Address</div>
-
-    <div class="form-row">
-      <div class="form-group half">
-        <label>No./Street<span class="required">*</span></label>
-        <input type="text">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group half">
-        <label>Brgy/Subdivision<span class="required">*</span></label>
-        <input type="text">
-    </div>
-      <div class="form-group half">
-        <label>City/Municipality<span class="required">*</span></label>
-        <input type="text">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group half">
-        <label>Province<span class="required">*</span></label>
-        <input type="text">
-      </div>
-        <div class="form-group half">
-        <label>Zip code</label>
-        <input type="text">
-      </div>
-    </div>
-
-    <!-- Birth & Contact -->
-    <div class="form-row">
-      <div class="form-group half">
-        <label>Birth Date<span class="required">*</span></label>
-        <input type="date">
-      </div>
-      <div class="form-group half">
-        <label>Contact Number<span class="required">*</span></label>
-        <div class="phone-input">
-          <span class="country-code">+63</span>
-          <input type="tel" placeholder="9XX XXX XXXX">
+    <!-- MAIN AREA -->
+    <div class="main-area">
+      <div class="header">
+        <img src="./images/pque logo.png" class="logo" alt="Logo" />
+        <div class="header-text">
+          <span class="republic">Republic of the Philippines</span>
+          <hr class="header-line" />
+          <h1 class="city-name">City Government of Parañaque</h1>
         </div>
       </div>
-    </div>
 
-    <!-- Job -->
+      <h2 class="main-title">Registration of the Office of Public Servants</h2>
+
+      <div class="main-content">
+        <div class="form-row">
+          <div class="form-group half">
+            <label>Given Name<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+          <div class="form-group half">
+            <label>Middle Name<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+          <div class="form-group half">
+            <label>Last Name<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+          <div class="form-group quarter">
+            <label>Suffix</label>
+            <select>
+              <option value="">Select</option>
+              <option value="Jr">Jr</option>
+              <option value="Sr">Sr</option>
+              <option value="III">III</option>
+              <option value="III">IV</option>
+              <option value="III">V</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-title">Complete Address</div>
+
+        <div class="form-row">
+          <div class="form-group half">
+            <label>No./Street<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group half">
+            <label>Brgy/Subdivision<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+          <div class="form-group half">
+            <label>City/Municipality<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group half">
+            <label>Province<span class="required">*</span></label>
+            <input type="text" />
+          </div>
+          <div class="form-group half">
+            <label>Zip code</label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group half">
+            <label>Birth Date<span class="required">*</span></label>
+            <input type="date" />
+          </div>
+          <div class="form-group half">
+            <label>Contact Number<span class="required">*</span></label>
+            <div class="phone-input">
+              <span class="country-code">+63</span>
+              <input type="tel" placeholder="9XX XXX XXXX" />
+            </div>
+          </div>
+        </div>
+
+    <!-- Nature of Connection -->
     <div class="form-row">
       <div class="form-group half">
         <label>Nature of Connection<span class="required">*</span></label>
@@ -114,9 +118,7 @@
           <label for="css">Coordinator</label><br>
         </div>
     </div>
-
-    <!-- End of Employment -->
-
+    <!-- Organization -->
     <div class="form-row">
       <div class="form-group half">
         <label>Organization/Association<span class="required">*</span></label>
@@ -136,6 +138,9 @@
     <ul id="memberList"></ul>
     </div>
   </div>
+        </div>
+      </div>
+    </div>
   <script src="constituents.js"></script>
 </body>
 </html>

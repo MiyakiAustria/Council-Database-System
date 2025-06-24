@@ -17,6 +17,10 @@ function addMember() {
     editBtn.textContent = 'Edit';
     editBtn.className = 'edit-btn';
 
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.className = 'delete-btn';
+
     // Edit button logic
     editBtn.addEventListener('click', function () {
       const newName = prompt('Edit member name:', span.textContent);
@@ -25,8 +29,14 @@ function addMember() {
       }
     });
 
+    // Delete button logic
+    deleteBtn.addEventListener('click', function () {
+      memberList.removeChild(li);
+    });
+
     li.appendChild(span);
     li.appendChild(editBtn);
+    li.appendChild(deleteBtn);
     memberList.appendChild(li);
 
     input.value = ''; // Clear input
