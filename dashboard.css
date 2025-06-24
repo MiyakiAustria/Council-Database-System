@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 body {
   margin: 0;
   padding: 0;
@@ -5,189 +6,124 @@ body {
   background-color: #fafafa;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* HEADER */
 .header {
-  background-color: #00894e; /* Green background */
+  background-color: #00894e;
   color: white;
   padding: 20px 30px;
   display: flex;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
+  height: 120px;
+  box-sizing: border-box;
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
   height: auto;
-  padding-left: 50px;
+  margin-right: 20px;
+  margin-left: 150px;
 }
 
 .header-text {
-  line-height: 0.5;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  line-height: 1.2;
 }
 
 .republic {
   font-size: 20px;
   font-weight: bold;
-  padding-left: 20px;
 }
 
 .header-line {
-    padding-left: 20px;
-    margin-left: 20px;
+  width: 100%;
+  border: 1px solid white;
 }
 
 .city-name {
   font-size: 30px;
   font-weight: bold;
-  padding-left: 20px;
-  margin-top: 0%;
+  margin: 0;
 }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.search-bar {
-  padding: 8px 15px;
-  border-radius: 8px;
-  border: none;
-  width: 200px;
-  outline: none;
-}
-
-.notification-btn {
-  background-color: white;
-  color: #00894e;
-  border: none;
-  border-radius: 8px;
-  padding: 8px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/*Side navigation bar*/
+/* SIDEBAR */
 .side-nav {
-    background-color: #f4f4f4;
-    height: 100%;
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    top: 140px;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    text-align: center;
+  background-color: #f4f4f4;
+  width: 180px;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 10px; 
+  box-sizing: border-box;
 }
 
-.side-nav a {
-  display: block;
-}  
-
-.icons img {
-  margin-bottom: 0;
-  margin-right: 8px;
-}
-
-.icon-label {
+/* USER ICON INSIDE SIDEBAR */
+.user-icon {
   display: flex;
   align-items: center;
-  gap: 8px;
+  padding: 10px 20px;
+  gap: 10px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px; 
 }
 
 .user-icon img {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
-  vertical-align: middle;
-  padding-left: 13px;
+  border-radius: 50%;
 }
 
-.user-icon {
-  position: absolute;
-  vertical-align: middle;
-  margin-bottom: 20px;
-
-}
-
+/* NAV LINKS */
 .nav-links {
-    display: absolute;
-    gap: 25px; 
-    line-height: 80px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
 }
 
-.icons {
-  margin-top: 30px;
+.icons, .logout {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
   text-decoration: none;
   color: black;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  padding-left: 20px;
+  transition: background-color 0.0001s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.icons img {
+.icons img, .logout img {
   width: 25px;
   height: 25px;
-  vertical-align: middle;
+  margin-right: 10px;
 }
 
-.icons img:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-.logout {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    width: 100%;
-    text-align: center;;
-}
-
-.logout img {
-    width: 25px;
-    height: 25px;
-    padding-bottom: 30px;
-}
-
-.logout img:hover {
-    cursor: pointer;
-    opacity: 0.7;
+.icons:hover, .logout:hover {
+  background-color: #00894e;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 15px 15px 0;
 }
 
 .active {
-    opacity: 0.5;
+  background-color: #00894e;
+  color: white;
+  border-radius: 0 15px 15px 0;
 }
 
-
-/*
-.icons {
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding: 10px 0;
+.logout {
+  margin-top: auto;
 }
-
-.icon-label {
-  display: flex;
-  flex-direction: column; /* vertical 
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-label img {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 5px;
-}
-*/

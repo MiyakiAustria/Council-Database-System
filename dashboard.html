@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
-    <title>Council Database System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <title>Council Database System</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="./images/pque logo.png" class="logo" style="width: 100px; height: auto;">
-            <div class="header-text">
-                <span class="republic">Republic of the Philippines</span>
-                <hr class="header-line">
-                <h1 class="city-name">City Government of Parañaque</h1> 
-            </div>
-        </div>
-        <div class="side-nav">
-            <a href="#home" class="user-icon"><img src="./images/user-icon.png">John Marikit</a>
-            <br><br><br>
-
-        <div class="nav-links">
-            <a href="#home" class="icons" title="Dashboard"><img class="active" src="./images/dash-icon.png">Dashboard</a>
-            <br>
-            <a href="#home" class="icons" title="User Register"><img src="./images/forms-icon.png">User Register</a>
-            <br>
-            <a href="#home" class="icons" title="Requests"><img src="./images/request-icon.png">Request Form</a>
-            <br>
-            <a href="#home" class="icons" title="Inventory"><img src="./images/inventory.png">Inventory</a>
-            <br>
-            <a href="#home" class="logout" title="Logout"><img src="./images/logout.png">Log out</a>
-        </div>
-        </div>
+  <body>
+  <div class="container">
+    <!-- HEADER -->
+    <div class="header">
+      <img src="./images/pque logo.png" class="logo" alt="Logo" />
+      <div class="header-text">
+        <span class="republic">Republic of the Philippines</span>
+        <hr class="header-line" />
+        <h1 class="city-name">City Government of Parañaque</h1>
+      </div>
     </div>
+
+    <!-- SIDEBAR (USER ICON INCLUDED INSIDE SIDEBAR) -->
+    <div class="side-nav">
+      <div class="user-icon">
+        <img src="./images/user-icon.png" alt="User Icon" />
+        <span>John Marikit</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="dashboard.html" class="icons active"><img src="./images/dash-icon.png" alt="">Dashboard</a>
+        <a href="#user-register" class="icons"><img src="./images/forms-icon.png" alt="">User Register</a>
+        <a href="#requests" class="icons"><img src="./images/request-icon.png" alt="">Request Form</a>
+        <a href="#inventory" class="icons"><img src="./images/inventory.png" alt="">Inventory</a>
+      </div>
+
+      <a href="#logout" class="logout"><img src="./images/logout.png" alt="">Log out</a>
+    </div>
+  </div>
 </body>
 </html>
